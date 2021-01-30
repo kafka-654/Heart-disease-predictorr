@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
@@ -18,7 +17,7 @@ def main():
     st.sidebar.markdown("Do you have a Heart Disease?")
     
     def load_data():
-        data = pd.read_csv("heart.csv")
+        data = pd.read_csv("heart1.csv")
         return data
     
     def split(df):
