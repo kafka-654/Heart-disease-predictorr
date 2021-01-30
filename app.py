@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
 from sklearn.svm import SVC
 from sklearn.metrics import precision_score, recall_score
 from sklearn.metrics import plot_confusion_matrix, plot_roc_curve, plot_precision_recall_curve
