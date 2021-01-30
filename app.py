@@ -125,7 +125,7 @@ def main():
         data = pd.read_csv("heart1.csv")
         return data
     
-    if st.sidebar.checkbox("Make your own prediction", False):
+    if st.sidebar.checkbox("Make your own prediction (Using random forests)", False):
         st.subheader("Enter the features")
         age = st.number_input("age:", value=63, min_value=0, max_value=100, step = 1, key = 'age')
         sex = st.number_input("sex:", value=1, min_value=0, max_value=1, step = 1, key = 'sex')
